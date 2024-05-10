@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'power-bi-pm2-5' title`, () => {
+  it(`should have the 'power-bi-project' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('power-bi-pm2-5');
+    expect(app.title).toEqual('power-bi-project');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, power-bi-pm2-5');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, power-bi-project');
   });
 });
